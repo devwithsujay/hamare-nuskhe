@@ -1,0 +1,510 @@
+[
+  {
+    "id": "sample-drink-1",
+    "slug": "sample-digestive-infusion",
+    "titleEn": "[Sample] Cumin & Coriander Warm Infusion",
+    "titleNative": "जीरा-धनिया पेय",
+    "nativeScript": "Devanagari",
+    "transliteration": "Jeera-Dhaniya Peya",
+    "alternateNames": ["Digestive water sample"],
+    "stateOrUT": "Rajasthan",
+    "region": "West",
+    "communityOrTradition": "Household tradition",
+    "originConfidence": "ORAL_TRADITION",
+    "remedyType": "FOOD_OR_DRINK",
+    "category": "Digestion",
+    "tradition": "FOLK",
+    "traditionalUses": ["mild bloating after meals", "traditional post-meal digestive warmth"],
+    "botanicals": [
+      {
+        "commonName": "Cumin",
+        "scientificName": "Cuminum cyminum",
+        "plantPart": "seed",
+        "nameVerifiedAgainst": "POWO"
+      },
+      {
+        "commonName": "Coriander",
+        "scientificName": "Coriandrum sativum",
+        "plantPart": "seed",
+        "nameVerifiedAgainst": "POWO"
+      }
+    ],
+    "ingredients": [
+      { "name": "Cumin seeds", "amountValue": 1, "amountUnit": "tsp", "notes": "lightly roasted" },
+      { "name": "Coriander seeds", "amountValue": 1, "amountUnit": "tsp", "notes": "crushed" },
+      { "name": "Water", "amountValue": 250, "amountUnit": "ml", "notes": null }
+    ],
+    "baseServings": 1,
+    "steps": [
+      "Lightly bruise the cumin and coriander seeds in a mortar.",
+      "Bring water to a gentle boil in an earthen or steel pot.",
+      "Add the seeds, reduce heat, and simmer covered for 4 minutes.",
+      "Strain and sip warm."
+    ],
+    "prepTimeMinutes": 8,
+    "storage": "Consume freshly prepared; do not reheat.",
+    "traditionalUsage": {
+      "typicalAdultAmount": "1 cup",
+      "typicalFrequency": "once or twice daily",
+      "traditionalTiming": "30 minutes following main meals",
+      "maxDurationDays": 7,
+      "childUsePermitted": false
+    },
+    "ayurvedicAttributes": {
+      "virya": "SAMA",
+      "doshaEffect": ["Balances Vata and Pitta", "Kindles Agni gently"],
+      "source": "Folk household culinary lore"
+    },
+    "safety": {
+      "riskLevel": "LOW",
+      "avoidInPregnancy": false,
+      "avoidInBreastfeeding": false,
+      "avoidUnderAge": null,
+      "avoidInConditions": [],
+      "drugInteractionClasses": [],
+      "allergens": [],
+      "containsAlcohol": false,
+      "topicalPatchTestRequired": false,
+      "redFlagSymptoms": ["severe abdominal pain", "blood in stool", "persistent vomiting"],
+      "stopAndSeeDoctorIf": ["stomach cramps worsen or do not subside in 24 hours"]
+    },
+    "sources": [
+      {
+        "type": "WEBSITE",
+        "citation": "SAMPLE ENTRY - REPLACE",
+        "url": null,
+        "pageOrSection": null
+      }
+    ],
+    "evidenceNote": "Culinary digestive spices recorded in domestic kitchen ethnography.",
+    "folkloreNote": "Commonly simmered in brass vessels during winter months across desert communities.",
+    "verificationStatus": "DRAFT",
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "needsExpertReview": true,
+    "contributedBy": "EDITORIAL",
+    "createdAt": "2026-10-17T00:00:00Z",
+    "updatedAt": "2026-10-17T00:00:00Z"
+  },
+  {
+    "id": "sample-topical-1",
+    "slug": "sample-neem-turmeric-paste",
+    "titleEn": "[Sample] Fresh Neem & Turmeric Topical Paste",
+    "titleNative": "ಬೇವು ಅರಿಶಿನ ಲೇಪನ",
+    "nativeScript": "Kannada",
+    "transliteration": "Bevu Arishina Lepana",
+    "alternateNames": ["Neem Haldi Lep"],
+    "stateOrUT": "Karnataka",
+    "region": "South",
+    "communityOrTradition": "Rural Karnataka folk practices",
+    "originConfidence": "DOCUMENTED",
+    "remedyType": "TOPICAL",
+    "category": "Skin & Hair",
+    "tradition": "LOCAL_MIXED",
+    "traditionalUses": ["traditional topical application for mild surface blemishes"],
+    "botanicals": [
+      {
+        "commonName": "Neem",
+        "scientificName": "Azadirachta indica",
+        "plantPart": "leaf",
+        "nameVerifiedAgainst": "POWO"
+      },
+      {
+        "commonName": "Turmeric",
+        "scientificName": "Curcuma longa",
+        "plantPart": "rhizome",
+        "nameVerifiedAgainst": "POWO"
+      }
+    ],
+    "ingredients": [
+      { "name": "Fresh tender neem leaves", "amountValue": 10, "amountUnit": "piece", "notes": "washed thoroughly" },
+      { "name": "Wild turmeric paste", "amountValue": 0.5, "amountUnit": "tsp", "notes": "freshly ground" }
+    ],
+    "baseServings": 1,
+    "steps": [
+      "Wash tender neem leaves under clean water.",
+      "Grind into a fine smooth paste on a stone mortar with minimal water.",
+      "Mix with fresh turmeric paste.",
+      "Perform a mandatory patch test on inner wrist before applying."
+    ],
+    "prepTimeMinutes": 10,
+    "storage": "Use immediately; discard any leftover paste.",
+    "traditionalUsage": {
+      "typicalAdultAmount": "Thin dot application",
+      "typicalFrequency": "Once daily",
+      "traditionalTiming": "Before evening bath",
+      "maxDurationDays": 3,
+      "childUsePermitted": false
+    },
+    "ayurvedicAttributes": {
+      "virya": "SHEETA",
+      "doshaEffect": ["Pacifies Pitta and Kapha in skin"],
+      "source": "Regional folklore documentation"
+    },
+    "safety": {
+      "riskLevel": "LOW",
+      "avoidInPregnancy": false,
+      "avoidInBreastfeeding": false,
+      "avoidUnderAge": 12,
+      "avoidInConditions": [],
+      "drugInteractionClasses": [],
+      "allergens": [],
+      "containsAlcohol": false,
+      "topicalPatchTestRequired": true,
+      "redFlagSymptoms": ["spreading rash", "blistering", "burning sensation"],
+      "stopAndSeeDoctorIf": ["skin irritation, swelling, or contact dermatitis appears"]
+    },
+    "sources": [
+      {
+        "type": "WEBSITE",
+        "citation": "SAMPLE ENTRY - REPLACE",
+        "url": null,
+        "pageOrSection": null
+      }
+    ],
+    "evidenceNote": "Widely noted ethnobotanical folk application in Southern peninsular states.",
+    "folkloreNote": "Pounded with stone pestle using rain water or clean well water.",
+    "verificationStatus": "DRAFT",
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "needsExpertReview": true,
+    "contributedBy": "EDITORIAL",
+    "createdAt": "2026-10-17T00:00:00Z",
+    "updatedAt": "2026-10-17T00:00:00Z"
+  },
+  {
+    "id": "sample-steam-1",
+    "slug": "sample-ajwain-tulsi-steam",
+    "titleEn": "[Sample] Ajwain & Holy Basil Inhalation Fomentation",
+    "titleNative": "अजवाइन-तुलसी भाप",
+    "nativeScript": "Devanagari",
+    "transliteration": "Ajwain-Tulsi Bhaap",
+    "alternateNames": ["Carom steam inhalation"],
+    "stateOrUT": "Uttar Pradesh",
+    "region": "North",
+    "communityOrTradition": "Awadh domestic practices",
+    "originConfidence": "WIDELY_REPORTED",
+    "remedyType": "STEAM_OR_FOMENTATION",
+    "category": "Respiratory",
+    "tradition": "FOLK",
+    "traditionalUses": ["traditional gentle steam inhalation for stuffy seasonal nose"],
+    "botanicals": [
+      {
+        "commonName": "Ajwain",
+        "scientificName": "Trachyspermum ammi",
+        "plantPart": "seed",
+        "nameVerifiedAgainst": "POWO"
+      },
+      {
+        "commonName": "Holy Basil",
+        "scientificName": "Ocimum tenuiflorum",
+        "plantPart": "leaf",
+        "nameVerifiedAgainst": "POWO"
+      }
+    ],
+    "ingredients": [
+      { "name": "Ajwain seeds", "amountValue": 1, "amountUnit": "tsp", "notes": "crushed" },
+      { "name": "Tulsi leaves", "amountValue": 8, "amountUnit": "piece", "notes": "fresh" },
+      { "name": "Boiling water", "amountValue": 1000, "amountUnit": "ml", "notes": "in wide basin" }
+    ],
+    "baseServings": 1,
+    "steps": [
+      "Bring 1 litre of water to a rolling boil in a secure pot.",
+      "Transfer water to a stable, heatproof bowl placed on a low table.",
+      "Add crushed ajwain and tulsi leaves.",
+      "Lean over the bowl at a safe distance (minimum 30 cm) with a light cotton cloth draped over head.",
+      "Inhale warm vapor gently for 3 to 5 minutes."
+    ],
+    "prepTimeMinutes": 6,
+    "storage": "Discard water immediately after use.",
+    "traditionalUsage": {
+      "typicalAdultAmount": "One steam session",
+      "typicalFrequency": "Once in the evening",
+      "traditionalTiming": "Before retiring to bed",
+      "maxDurationDays": 3,
+      "childUsePermitted": false
+    },
+    "ayurvedicAttributes": {
+      "virya": "USHNA",
+      "doshaEffect": ["Pacifies Kapha and Vata in upper airways"],
+      "source": "Domestic practice"
+    },
+    "safety": {
+      "riskLevel": "LOW",
+      "avoidInPregnancy": false,
+      "avoidInBreastfeeding": false,
+      "avoidUnderAge": 8,
+      "avoidInConditions": [],
+      "drugInteractionClasses": [],
+      "allergens": [],
+      "containsAlcohol": false,
+      "topicalPatchTestRequired": false,
+      "redFlagSymptoms": ["stridor", "shortness of breath", "chest tightness", "burn from water"],
+      "stopAndSeeDoctorIf": ["breathing difficulty arises or symptoms worsen"]
+    },
+    "sources": [
+      {
+        "type": "WEBSITE",
+        "citation": "SAMPLE ENTRY - REPLACE",
+        "url": null,
+        "pageOrSection": null
+      }
+    ],
+    "evidenceNote": "Thermal inhalation provides transient humidification to nasal mucosa.",
+    "folkloreNote": "Used across northern plains at the onset of autumn chill.",
+    "verificationStatus": "DRAFT",
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "needsExpertReview": true,
+    "contributedBy": "EDITORIAL",
+    "createdAt": "2026-10-17T00:00:00Z",
+    "updatedAt": "2026-10-17T00:00:00Z"
+  },
+  {
+    "id": "sample-honey-1",
+    "slug": "sample-adrak-madhu-soother",
+    "titleEn": "[Sample] Warm Ginger & Honey Throat Soother",
+    "titleNative": "आर्द्रक मधु लेह",
+    "nativeScript": "Devanagari",
+    "transliteration": "Aardraka Madhu Leha",
+    "alternateNames": ["Ginger honey spoon"],
+    "stateOrUT": "Uttarakhand",
+    "region": "North",
+    "communityOrTradition": "Garhwal foothill kitchen lore",
+    "originConfidence": "DOCUMENTED",
+    "remedyType": "FOOD_OR_DRINK",
+    "category": "Oral & Throat",
+    "tradition": "FOLK",
+    "traditionalUses": ["traditional use for soothing a scratchy throat"],
+    "botanicals": [
+      {
+        "commonName": "Ginger",
+        "scientificName": "Zingiber officinale",
+        "plantPart": "rhizome",
+        "nameVerifiedAgainst": "POWO"
+      }
+    ],
+    "ingredients": [
+      { "name": "Fresh ginger juice", "amountValue": 1, "amountUnit": "tsp", "notes": "expressed from grated ginger" },
+      { "name": "Raw forest honey", "amountValue": 1, "amountUnit": "tsp", "notes": "unheated" }
+    ],
+    "baseServings": 1,
+    "steps": [
+      "Grate a small piece of peeled ginger and squeeze through a clean cloth to yield 1 tsp juice.",
+      "Allow the juice to sit for 5 minutes so heavy white starch settles at the bottom; decant clear juice.",
+      "Gently stir in room-temperature honey (never heat honey).",
+      "Lick slowly from a teaspoon."
+    ],
+    "prepTimeMinutes": 5,
+    "storage": "Prepare fresh per serving.",
+    "traditionalUsage": {
+      "typicalAdultAmount": "1 teaspoon total",
+      "typicalFrequency": "Twice daily",
+      "traditionalTiming": "Between meals",
+      "maxDurationDays": 3,
+      "childUsePermitted": false
+    },
+    "ayurvedicAttributes": {
+      "virya": "USHNA",
+      "doshaEffect": ["Relieves Kapha, warms throat"],
+      "source": "Himalayan folk ethnobotany"
+    },
+    "safety": {
+      "riskLevel": "LOW",
+      "avoidInPregnancy": false,
+      "avoidInBreastfeeding": false,
+      "avoidUnderAge": 1,
+      "avoidInConditions": ["BLEEDING_DISORDER", "UPCOMING_SURGERY", "ULCER_OR_GERD"],
+      "drugInteractionClasses": ["ANTICOAGULANT"],
+      "allergens": ["honey"],
+      "containsAlcohol": false,
+      "topicalPatchTestRequired": false,
+      "redFlagSymptoms": ["inability to swallow", "high fever", "stridor"],
+      "stopAndSeeDoctorIf": ["throat pain makes swallowing fluids impossible"]
+    },
+    "sources": [
+      {
+        "type": "WEBSITE",
+        "citation": "SAMPLE ENTRY - REPLACE",
+        "url": null,
+        "pageOrSection": null
+      }
+    ],
+    "evidenceNote": "Demulcent action of honey coats pharyngeal mucosa; ginger stimulates salivation.",
+    "folkloreNote": "Grandmothers cautioned strictly that honey must never be cooked or heated over fire.",
+    "verificationStatus": "DRAFT",
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "needsExpertReview": true,
+    "contributedBy": "EDITORIAL",
+    "createdAt": "2026-10-17T00:00:00Z",
+    "updatedAt": "2026-10-17T00:00:00Z"
+  },
+  {
+    "id": "sample-highrisk-1",
+    "slug": "sample-giloy-tulsi-adjunct",
+    "titleEn": "[Sample] Giloy & Tulsi Bitter Decoction (Adjunct Only)",
+    "titleNative": "गिलोय-तुलसी क्वाथ",
+    "nativeScript": "Devanagari",
+    "transliteration": "Giloy-Tulsi Kwath",
+    "alternateNames": ["Amrita Kadha"],
+    "stateOrUT": "Madhya Pradesh",
+    "region": "Central",
+    "communityOrTradition": "Central Indian classical folklore",
+    "originConfidence": "DOCUMENTED",
+    "remedyType": "FOOD_OR_DRINK",
+    "category": "Immunity & Seasonal",
+    "tradition": "AYURVEDA",
+    "traditionalUses": ["traditional seasonal convalescent adjunct", "fever convalescence support"],
+    "botanicals": [
+      {
+        "commonName": "Giloy",
+        "scientificName": "Tinospora cordifolia",
+        "plantPart": "stem",
+        "nameVerifiedAgainst": "POWO"
+      },
+      {
+        "commonName": "Tulsi",
+        "scientificName": "Ocimum tenuiflorum",
+        "plantPart": "leaf",
+        "nameVerifiedAgainst": "POWO"
+      }
+    ],
+    "ingredients": [
+      { "name": "Fresh Giloy stem (finger length)", "amountValue": 1, "amountUnit": "piece", "notes": "crushed" },
+      { "name": "Tulsi leaves", "amountValue": 6, "amountUnit": "piece", "notes": "fresh" },
+      { "name": "Water", "amountValue": 400, "amountUnit": "ml", "notes": null }
+    ],
+    "baseServings": 1,
+    "steps": [
+      "Crush the fresh green giloy stem to expose inner fibers.",
+      "Combine water, giloy, and tulsi in a pot.",
+      "Boil steadily until the water volume reduces to one quarter (approx 100 ml).",
+      "Strain through a fine cloth and drink lukewarm."
+    ],
+    "prepTimeMinutes": 18,
+    "storage": "Use fresh; never consume overnight decoctions.",
+    "traditionalUsage": {
+      "typicalAdultAmount": "50 ml to 100 ml",
+      "typicalFrequency": "Once daily in morning",
+      "traditionalTiming": "Before breakfast",
+      "maxDurationDays": 5,
+      "childUsePermitted": false
+    },
+    "ayurvedicAttributes": {
+      "virya": "USHNA",
+      "doshaEffect": ["Tridosha shamaka, purifies Pitta-Kapha"],
+      "source": "Charaka Samhita references"
+    },
+    "safety": {
+      "riskLevel": "HIGH",
+      "avoidInPregnancy": true,
+      "avoidInBreastfeeding": "UNKNOWN",
+      "avoidUnderAge": 12,
+      "avoidInConditions": ["AUTOIMMUNE", "LIVER_DISEASE", "DIABETES"],
+      "drugInteractionClasses": ["IMMUNOSUPPRESSANT", "ANTIDIABETIC"],
+      "allergens": [],
+      "containsAlcohol": false,
+      "topicalPatchTestRequired": false,
+      "redFlagSymptoms": ["persistent fever above 101F", "chills", "yellowing of eyes", "dark urine"],
+      "stopAndSeeDoctorIf": ["fever does not resolve in 24 hours, or liver tenderness develops"]
+    },
+    "sources": [
+      {
+        "type": "WEBSITE",
+        "citation": "SAMPLE ENTRY - REPLACE",
+        "url": null,
+        "pageOrSection": null
+      }
+    ],
+    "evidenceNote": "Tinospora cordifolia contains berberine and immunomodulatory diterpenes. Excessive unregulated use has been linked to autoimmune drug-induced liver injury.",
+    "folkloreNote": "Referred to as Amrita (immortality nectar) in classical Ayurvedic literature.",
+    "verificationStatus": "DRAFT",
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "needsExpertReview": true,
+    "contributedBy": "EDITORIAL",
+    "createdAt": "2026-10-17T00:00:00Z",
+    "updatedAt": "2026-10-17T00:00:00Z"
+  },
+  {
+    "id": "sample-noscript-1",
+    "slug": "sample-coriander-cooling-water",
+    "titleEn": "[Sample] Dhaniya Overnight Cold Maceration",
+    "titleNative": null,
+    "nativeScript": null,
+    "transliteration": "Dhaniya Hima",
+    "alternateNames": ["Coriander seed cold infusion"],
+    "stateOrUT": "Goa",
+    "region": "West",
+    "communityOrTradition": "Coastal Goan culinary households",
+    "originConfidence": "WIDELY_REPORTED",
+    "remedyType": "FOOD_OR_DRINK",
+    "category": "General Wellness",
+    "tradition": "FOLK",
+    "traditionalUses": ["traditional refreshing hydration in humid coastal heat"],
+    "botanicals": [
+      {
+        "commonName": "Coriander",
+        "scientificName": "Coriandrum sativum",
+        "plantPart": "seed",
+        "nameVerifiedAgainst": "POWO"
+      }
+    ],
+    "ingredients": [
+      { "name": "Whole coriander seeds", "amountValue": 1, "amountUnit": "tbsp", "notes": "lightly bruised" },
+      { "name": "Boiled and cooled room-temperature water", "amountValue": 300, "amountUnit": "ml", "notes": null }
+    ],
+    "baseServings": 1,
+    "steps": [
+      "Lightly crush the coriander seeds so each seed splits in half.",
+      "Place seeds into a clean ceramic or clay jug with 300 ml cooled water.",
+      "Cover and steep overnight (approx 6 to 8 hours).",
+      "Strain in the morning through a fine sieve and consume."
+    ],
+    "prepTimeMinutes": 5,
+    "storage": "Consume within 6 hours of straining; keep shaded.",
+    "traditionalUsage": {
+      "typicalAdultAmount": "1 glass",
+      "typicalFrequency": "Once in the morning",
+      "traditionalTiming": "Empty stomach at sunrise",
+      "maxDurationDays": 7,
+      "childUsePermitted": false
+    },
+    "ayurvedicAttributes": {
+      "virya": "SHEETA",
+      "doshaEffect": ["Pacifies Pitta and burning sensation"],
+      "source": "Sharangadhara Samhita classical cold infusion (Hima) principle"
+    },
+    "safety": {
+      "riskLevel": "LOW",
+      "avoidInPregnancy": false,
+      "avoidInBreastfeeding": false,
+      "avoidUnderAge": null,
+      "avoidInConditions": [],
+      "drugInteractionClasses": [],
+      "allergens": [],
+      "containsAlcohol": false,
+      "topicalPatchTestRequired": false,
+      "redFlagSymptoms": ["heat exhaustion with confusion", "inability to sweat", "fainting"],
+      "stopAndSeeDoctorIf": ["signs of severe heatstroke appear"]
+    },
+    "sources": [
+      {
+        "type": "WEBSITE",
+        "citation": "SAMPLE ENTRY - REPLACE",
+        "url": null,
+        "pageOrSection": null
+      }
+    ],
+    "evidenceNote": "Classical cold infusion (Hima Kalpana) widely cited in regional coastal ethnobotany.",
+    "folkloreNote": "Common practice in Konkan during April-May pre-monsoon swelter.",
+    "verificationStatus": "DRAFT",
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "needsExpertReview": true,
+    "contributedBy": "EDITORIAL",
+    "createdAt": "2026-10-17T00:00:00Z",
+    "updatedAt": "2026-10-17T00:00:00Z"
+  }
+]

@@ -1,26 +1,528 @@
 @import "tailwindcss";
 
+@variant dark (&:where([data-theme="dark"], [data-theme="dark"] *, .dark, .dark *));
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* ========================================================
+     AUTHENTIC INDIAN NATURAL PIGMENTS PALETTE
+     (Royal Indian Herbarium & Grandmother's Copper-and-Khadi Ledger)
+     ======================================================== */
+  --canvas-khadi: #F4EFE6;
+  /* Primary Canvas (Handmade Khadi / Bhojpatra) */
+  --card-parchment: #FAF6EE;
+  /* Elevated Card Surface (Aged Parchment) */
+  --ink-kajal: #1C1917;
+  /* Primary Ink (Kajal / Lampblack) */
+  --ink-sepia: #5C5346;
+  /* Secondary Ink (Walnut Bark / Sepia) */
+
+  --accent-sindoor: #9E2A2B;
+  /* Accent 1 — Sindoor / Kumkum Terracotta */
+  --accent-haldi: #D99B26;
+  /* Accent 2 — Haldi / Turmeric Ochre */
+  --accent-neem: #2D4A3E;
+  /* Accent 3 — Neem / Tulsi Patra Green */
+  --accent-kansya: #B5945B;
+  /* Accent 4 — Kansya / Aged Brass */
+
+  /* Architectural Hairlines & Structural Borders */
+  --border-khadi: #D8CBB8;
+  /* Standard outer ledger hairline */
+  --border-hairline: #E2D9C8;
+  /* Ultra-fine index rule */
+  --border-brass: #B5945B;
+  /* Antique brass double-line */
+  --border-active: #9E2A2B;
+  /* Sindoor terracotta active stroke */
+
+  /* Legacy Mapping for Seamless Component Compatibility */
+  --parchment: var(--canvas-khadi);
+  --paper: var(--card-parchment);
+  --rule: var(--border-khadi);
+  --ink: var(--ink-kajal);
+  --sepia: var(--ink-sepia);
+  --terracotta: var(--accent-sindoor);
+  --turmeric: var(--accent-haldi);
+  --sage: var(--accent-neem);
+  --brass: var(--accent-kansya);
+  --kumkum: var(--accent-sindoor);
+
+  /* Safety & Warning tokens (Sanskrit Medical Warnings) */
+  --danger: #9E2A2B;
+  --danger-bg: #FDF4F4;
+  --danger-border: #E8A5A5;
+  --caution: #C27E10;
+  --caution-bg: #FEF8EC;
+  --caution-border: #E8C178;
+
+  /* App surfaces */
+  --background: var(--canvas-khadi);
+  --foreground: var(--ink-kajal);
+  --card-bg: var(--card-parchment);
+  --border-color: var(--border-khadi);
+  --muted-text: var(--ink-sepia);
+
+  /* Typography scale - Balanced, elegant readable scale */
+  --base-font-size: 15px;
+  --body-line-height: 1.65;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+html[data-theme="dark"],
+.dark {
+  /* Lamp-lit Temple Herbarium Sanctuary (Oil lamp glow on aged palm leaf) */
+  --canvas-khadi: #161412;
+  --card-parchment: #1F1C18;
+  --ink-kajal: #F4EFE6;
+  --ink-sepia: #C7BDB0;
+
+  --accent-sindoor: #E06456;
+  --accent-haldi: #E5A83B;
+  --accent-neem: #62A873;
+  --accent-kansya: #D4B373;
+
+  --border-khadi: #383229;
+  --border-hairline: #2D271F;
+  --border-brass: #D4B373;
+  --border-active: #E06456;
+
+  --parchment: var(--canvas-khadi);
+  --paper: var(--card-parchment);
+  --rule: var(--border-khadi);
+  --ink: var(--ink-kajal);
+  --sepia: var(--ink-sepia);
+  --terracotta: var(--accent-sindoor);
+  --turmeric: var(--accent-haldi);
+  --sage: var(--accent-neem);
+  --brass: var(--accent-kansya);
+  --kumkum: var(--accent-sindoor);
+
+  --danger: #F87171;
+  --danger-bg: #291515;
+  --danger-border: #9E2A2B;
+  --caution: #FBBF24;
+  --caution-bg: #2B200E;
+  --caution-border: #B45309;
+
+  --background: var(--canvas-khadi);
+  --foreground: var(--ink-kajal);
+  --card-bg: var(--card-parchment);
+  --border-color: var(--border-khadi);
+  --muted-text: var(--ink-sepia);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* User text size controls - Balanced readable scale */
+html[data-text-size="sm"] {
+  --base-font-size: 13.5px;
+}
+
+html[data-text-size="md"] {
+  --base-font-size: 15px;
+}
+
+html[data-text-size="lg"] {
+  --base-font-size: 16.5px;
+}
+
+html {
+  font-size: var(--base-font-size);
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-lora), var(--font-inter), Georgia, serif;
+  font-size: var(--base-font-size);
+  line-height: var(--body-line-height);
+  position: relative;
+  min-height: 100vh;
+}
+
+/* Subtle, non-intrusive SVG Paper Grain / Bhojpatra tactile overlay */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+/* ========================================================
+   TYPOGRAPHY FAMILIES
+   ======================================================== */
+/* Editorial Serifs (Cormorant Garamond & Playfair Display) */
+h1,
+h2,
+h3,
+.font-editorial,
+.font-serif {
+  font-family: var(--font-cormorant), var(--font-playfair), "Cormorant Garamond", Georgia, serif;
+  letter-spacing: -0.015em;
+}
+
+/* Indic Calligraphic Headings (Rozha One / Noto Serif Devanagari) */
+.font-rozha,
+.font-indic-devanagari {
+  font-family: var(--font-rozha), var(--font-devanagari), "Rozha One", "Noto Serif Devanagari", serif;
+}
+
+/* Humanist Body Copy (Lora / Source Serif) */
+p,
+.font-body {
+  font-family: var(--font-lora), var(--font-inter), Georgia, serif;
+}
+
+/* Museum Specimen & Archival Metadata (IBM Plex Mono / JetBrains Mono) */
+.font-archival-mono,
+.font-mono {
+  font-family: var(--font-mono), "IBM Plex Mono", "JetBrains Mono", monospace;
+  letter-spacing: 0.05em;
+}
+
+/* Indic Scripts Fallback Classes */
+.font-indic-kannada {
+  font-family: "Noto Serif Kannada", sans-serif;
+}
+
+.font-indic-tamil {
+  font-family: "Noto Serif Tamil", sans-serif;
+}
+
+.font-indic-telugu {
+  font-family: "Noto Serif Telugu", sans-serif;
+}
+
+.font-indic-malayalam {
+  font-family: "Noto Serif Malayalam", sans-serif;
+}
+
+.font-indic-bengali {
+  font-family: "Noto Serif Bengali", sans-serif;
+}
+
+.font-indic-gujarati {
+  font-family: "Noto Serif Gujarati", sans-serif;
+}
+
+.font-indic-gurmukhi {
+  font-family: "Noto Serif Gurmukhi", sans-serif;
+}
+
+.font-indic-odia {
+  font-family: "Noto Serif Odia", sans-serif;
+}
+
+.font-indic-assamese {
+  font-family: "Noto Serif Bengali", sans-serif;
+}
+
+/* ========================================================
+   ARCHIVAL MOHAR (INK STAMP) & HERBARIUM COMPONENTS
+   ======================================================== */
+
+/* Rectangular Archival Rubber Stamp (Mohar) */
+.stamp-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: var(--font-mono), monospace;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.18rem 0.5rem;
+  border-radius: 2px;
+  border-width: 1px;
+  border-style: solid;
+  transition: all 0.15s ease-in-out;
+}
+
+.stamp-reviewed {
+  background-color: rgba(45, 74, 62, 0.08);
+  border-color: var(--accent-neem);
+  color: var(--accent-neem);
+}
+
+.dark .stamp-reviewed {
+  background-color: rgba(98, 168, 115, 0.12);
+  border-color: var(--accent-neem);
+  color: var(--accent-neem);
+}
+
+.stamp-folk {
+  background-color: rgba(217, 155, 38, 0.12);
+  border-color: var(--accent-haldi);
+  color: #8B5E0D;
+}
+
+.dark .stamp-folk {
+  background-color: rgba(229, 168, 59, 0.15);
+  border-color: var(--accent-haldi);
+  color: var(--accent-haldi);
+}
+
+.stamp-state {
+  background-color: rgba(92, 83, 70, 0.06);
+  border-color: var(--border-khadi);
+  color: var(--ink-sepia);
+}
+
+.dark .stamp-state {
+  background-color: rgba(199, 189, 176, 0.08);
+  border-color: var(--border-khadi);
+  color: var(--ink-sepia);
+}
+
+.stamp-sindoor {
+  background-color: rgba(158, 42, 43, 0.08);
+  border-color: var(--accent-sindoor);
+  color: var(--accent-sindoor);
+}
+
+.dark .stamp-sindoor {
+  background-color: rgba(224, 100, 86, 0.15);
+  border-color: var(--accent-sindoor);
+  color: var(--accent-sindoor);
+}
+
+/* Herbarium Specimen Sheet Card */
+.herbarium-sheet {
+  position: relative;
+  background-color: var(--card-parchment);
+  border: 1px solid var(--border-khadi);
+  border-radius: 3px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), 0 2px 6px rgba(45, 38, 30, 0.04);
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.herbarium-sheet:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent-sindoor);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.9), 0 6px 18px rgba(158, 42, 43, 0.08);
+}
+
+/* Dedicated Glued Specimen Strip Inside Card */
+.specimen-strip {
+  border: 1px dashed rgba(181, 148, 91, 0.45);
+  background-color: rgba(244, 239, 230, 0.5);
+  padding: 0.45rem 0.65rem;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-top: 0.65rem;
+  margin-bottom: 0.65rem;
+}
+
+.dark .specimen-strip {
+  border-color: rgba(212, 179, 115, 0.3);
+  background-color: rgba(31, 28, 24, 0.6);
+}
+
+/* Official Archival Charter Double-line Brass Frame */
+.archival-charter {
+  border: 3px double var(--accent-kansya);
+  background-color: var(--card-parchment);
+  position: relative;
+  box-shadow: inset 0 0 0 1px rgba(181, 148, 91, 0.15), 0 4px 16px rgba(45, 38, 30, 0.05);
+  border-radius: 2px;
+}
+
+/* Wax or Ink Seal Micro-dot */
+.wax-seal-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px rgba(181, 148, 91, 0.4), inset 0 1px 2px rgba(0, 0, 0, 0.25);
+  display: inline-block;
+}
+
+/* Drop-cap for Folklore Notes */
+.drop-cap::first-letter {
+  float: left;
+  font-size: 3.4rem;
+  line-height: 0.82;
+  padding-right: 0.55rem;
+  padding-top: 0.2rem;
+  font-family: var(--font-cormorant), var(--font-playfair), Georgia, serif;
+  color: var(--accent-sindoor);
+  font-weight: 700;
+}
+
+/* Book Index Leader Lines */
+.index-row {
+  display: flex;
+  align-items: baseline;
+  width: 100%;
+}
+
+.index-leader {
+  flex-grow: 1;
+  border-bottom: 1px dotted var(--rule);
+  margin: 0 0.75rem;
+  min-width: 1.5rem;
+}
+
+/* State Folio Stamp */
+.state-stamp {
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: 1px solid var(--rule);
+  padding: 0.15rem 0.5rem;
+  border-radius: 2px;
+  color: var(--sepia);
+  background-color: var(--paper);
+  display: inline-block;
+}
+
+/* Verified Badges */
+.badge-reviewed {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: var(--sage);
+  border: 1px solid var(--sage);
+  padding: 0.15rem 0.55rem;
+  border-radius: 2px;
+  background-color: rgba(45, 90, 39, 0.08);
+}
+
+.badge-unreviewed {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: var(--sepia);
+  border: 1px solid var(--rule);
+  padding: 0.15rem 0.55rem;
+  border-radius: 2px;
+  background-color: var(--paper);
+}
+
+/* Traditional Indian Saree / Temple Header Line */
+.indian-temple-stripe {
+  background: repeating-linear-gradient(45deg,
+      var(--terracotta),
+      var(--terracotta) 10px,
+      var(--turmeric) 10px,
+      var(--turmeric) 20px,
+      var(--sage) 20px,
+      var(--sage) 30px);
+  height: 3px;
+  width: 100%;
+}
+
+/* Traditional Manuscript Double Frame */
+.manuscript-card {
+  position: relative;
+  background-color: var(--parchment);
+  border: 1px solid var(--rule);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.manuscript-card:hover {
+  border-color: var(--terracotta);
+  box-shadow: 0 4px 14px -3px rgba(156, 56, 32, 0.08);
+}
+
+/* Classical Sanskrit Shloka Box */
+.shloka-box {
+  background-color: var(--paper);
+  border-top: 2px solid var(--terracotta);
+  border-bottom: 2px solid var(--terracotta);
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  text-align: center;
+}
+
+/* Safe area padding for mobile bottom bar */
+.safe-bottom {
+  padding-bottom: max(0.5rem, env(safe-area-inset-bottom));
+}
+
+@media (max-width: 768px) {
+
+  /* Ensure bottom content on phones and small tablets is not obscured by the mobile bottom nav bar */
+  main {
+    padding-bottom: 5.5rem !important;
+  }
+}
+
+/* Touch-optimized horizontal scrolling */
+.touch-scroll {
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Print Stylesheet (Section 6: Clean A4 sheets) */
+@media print {
+  body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    font-size: 12pt;
+    line-height: 1.5;
+  }
+
+  .no-print,
+  nav,
+  footer,
+  button,
+  .action-bar {
+    display: none !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+
+  .remedy-print-sheet {
+    page-break-after: always;
+    page-break-inside: avoid;
+    padding: 1.5cm;
+  }
+
+  a {
+    color: #000000 !important;
+    text-decoration: none !important;
+  }
+}
+
+/* Text justification utility */
+.text-justify,
+p.text-justify {
+  text-align: justify !important;
+  text-justify: inter-word;
+  text-align-last: left;
+}
+
+/* Apple Bento & Sacred Geometry Animations */
+@keyframes spin-slow-90s {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow-90s {
+  animation: spin-slow-90s 90s linear infinite;
 }
